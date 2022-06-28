@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8pt"
+    tools:context=".activity_indx">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Comunicaciones"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                tools:layout_marginBottom="16pt" />
+
+            <Button
+                android:id="@+id/activity_index_btn_to_crear_notif"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Crear"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <Button
+                android:id="@+id/activity_index_btn_to_recibidas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Recibidas"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <Button
+                android:id="@+id/button17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enviadas"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                tools:layout_marginBottom="16pt" />
+
+            <Button
+                android:id="@+id/activity_index_btn_to_EditPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Editar Contraseña"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                tools:layout_marginBottom="16pt" />
+
+            <Button
+                android:id="@+id/activity_index_btn_to_End"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cerrar Sesión"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

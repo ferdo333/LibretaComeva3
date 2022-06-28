@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8pt"
+    android:layout_marginTop="8pt"
+    android:layout_marginRight="8pt"
+    android:layout_marginBottom="8pt"
+    tools:context=".Notification">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#035AA0B1"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/notif_tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="50dp"
+                android:text="Notificacion recibida" />
+
+            <TextView
+                android:id="@+id/activity_notification_tv_asunto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="Asunto: " />
+
+            <TextView
+                android:id="@+id/activity_notification_tv_fecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="Fecha Notificacion" />
+
+            <TextView
+                android:id="@+id/activity_notification_tv_asignatura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Asignatura: " />
+
+            <TextView
+                android:id="@+id/activity_notification_tv_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E8F4FD"
+                android:backgroundTint="#DFEFFD"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="Sr. Apoderado. Junto con saludar, informamos a usted que su pupilo se retirará a las 12:hrs el día de hoy, por planificacion docente. Saludos cordiales.  " />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <Button
+                    android:id="@+id/activity_notification_btn_firmar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:backgroundTint="#5A71F4"
+                    android:drawablePadding="16dp"
+                    android:insetRight="6dp"
+                    android:text="Firmar" />
+
+                <Button
+                    android:id="@+id/activity_notification_btn_responder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:drawablePadding="16dp"
+                    android:insetRight="6dp"
+                    android:text="Responder" />
+
+                <Button
+                    android:id="@+id/activity_notification_btn_eliminar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:backgroundTint="#FF4747"
+                    android:drawablePadding="16dp"
+                    android:text="Eliminar" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
